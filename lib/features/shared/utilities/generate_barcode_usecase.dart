@@ -1,14 +1,14 @@
-import 'dart:developer';
 import 'dart:io';
-import 'dart:ui';
 
-import 'package:app/entities/transaction/transaction.dart';
 import 'package:barcode/barcode.dart';
 import 'package:path_provider/path_provider.dart';
 
 class GenerateBarcodeUsecase {
   GenerateBarcodeUsecase();
   Future<String> call(String string, String name) async {
+    if (string.isEmpty) {
+      throw Exception('String is empty');
+    }
     final dm = Barcode.code128(useCode128C: true, escapes: true);
     final svg = dm.toSvg(string);
     final fileName = 'barcode_$name.svg';
