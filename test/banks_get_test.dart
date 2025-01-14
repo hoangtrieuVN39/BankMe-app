@@ -1,4 +1,4 @@
-import 'package:app/features/shared_usecase/request_banks_usecase.dart';
+import 'package:app/features/shared/request_banks_usecase.dart';
 import 'package:app/services/http/repositories/bank_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';

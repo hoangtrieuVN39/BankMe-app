@@ -1,5 +1,5 @@
-import 'package:app/features/shared_usecase/request_account_by_acc_num_usecase.dart';
-import 'package:app/features/shared_usecase/request_banks_usecase.dart';
+import 'package:app/features/shared/request_account_by_acc_num_usecase.dart';
+import 'package:app/features/shared/request_banks_usecase.dart';
 import 'package:app/features/transfer/transfer_main/domain/usecases/transfer_usecase.dart';
 import 'package:app/features/transfer/transfer_main/presentations/bloc/transfer_main_bloc.dart';
 import 'package:app/features/transfer/transfer_main/presentations/transfer_main_container.dart';

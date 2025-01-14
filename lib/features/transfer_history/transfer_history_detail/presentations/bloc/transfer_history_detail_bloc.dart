@@ -1,8 +1,8 @@
-import 'package:app/features/shared_usecase/request_account_by_id_usecase.dart';
-import 'package:app/features/shared_usecase/request_bank_by_id_usecase.dart';
-import 'package:app/features/shared_usecase/request_transactions_by_account.dart';
-import 'package:app/features/shared_usecase/request_user_by_id_usecase.dart';
-import 'package:app/features/transfer_history/transfer_history_detail/domain/usecases/generate_barcode_usecase.dart';
+import 'package:app/features/shared/request_account_by_id_usecase.dart';
+import 'package:app/features/shared/request_bank_by_id_usecase.dart';
+import 'package:app/features/shared/request_transactions_by_account.dart';
+import 'package:app/features/shared/request_user_by_id_usecase.dart';
+import 'package:app/features/shared/utilities/generate_barcode_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:app/entities/entities.dart';
@@ -37,7 +37,8 @@ class TransferHistoryDetailBloc
           await requestUserByIdUsecase(accountRecipient?.userId ?? 0);
       DateTime? time = transaction.transactionDate;
       String? barcode = await generateBarcodeUsecase(
-          transaction.toString(), transaction.transactionId.toString());
+          transaction.transactionId.toString(),
+          transaction.transactionId.toString());
       emit(state.copyWith(
           transaction: transaction,
           accountRecipient: accountRecipient,

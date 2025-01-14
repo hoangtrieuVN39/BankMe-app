@@ -79,7 +79,10 @@ class TransferHistoryDetailContainer extends StatelessWidget {
                       DateFormat('h:mma dd/MM/yyyy').format(time)),
                   SizedBox(height: 16),
                   Center(
-                      child: SvgPicture.file(File(barcode ?? ''), height: 50)),
+                      child: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: SvgPicture.file(File(barcode ?? ''),
+                              width: MediaQuery.maybeSizeOf(context)!.width))),
                   Spacer(),
                   TextButton(
                       style: TextButton.styleFrom(

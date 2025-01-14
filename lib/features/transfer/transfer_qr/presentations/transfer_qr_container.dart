@@ -12,35 +12,40 @@ class TransferQrContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<TransferQrBloc, TransferQrState>(
-        listener: (_, state) {
-          if (state.bankIdDetected != null &&
-              state.accountNumberDetected != null) {
-            Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => TransferMainPage(
-                    accountNumber: state.accountNumberDetected,
-                    bankId: state.bankIdDetected)));
-          }
-        },
-        builder: (_, state) => Scaffold(
-            backgroundColor: Colors.black,
-            appBar: AppBar(
-              leading: IconButton(
-                icon: Icon(Icons.arrow_back),
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              ),
+    return BlocConsumer<TransferQrBloc, TransferQrState>(listener: (_, state) {
+      if (state.bankIdDetected != null && state.accountNumberDetected != null) {
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => TransferMainPage(
+                accountNumber: state.accountNumberDetected,
+                bankId: state.bankIdDetected)));
+      }
+    }, builder: (_, state) {
+      if (state.controller == null) {
+        return const Center(
+          child: CircularProgressIndicator(),
+        );
+      }
+      return Scaffold(
+          backgroundColor: Colors.black,
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              },
             ),
-            body: MobileScanner(
-              onDetect: (barcode) {
-                context.read<TransferQrBloc>().add(
-                    TransferQrEvent.barcodeDetected(
-                        barcode.barcodes.firstOrNull?.rawValue ?? ''));
-              },
-              onDetectError: (error, stackTrace) {
-                log('error: $error');
-              },
-            )));
+          ),
+          body: MobileScanner(
+            controller: state.controller!,
+            onDetect: (barcode) {
+              context.read<TransferQrBloc>().add(
+                  TransferQrEvent.barcodeDetected(
+                      barcode.barcodes.firstOrNull?.rawValue ?? ''));
+            },
+            onDetectError: (error, stackTrace) {
+              log('error: $error');
+            },
+          ));
+    });
   }
 }

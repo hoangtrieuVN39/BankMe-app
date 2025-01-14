@@ -1,7 +1,7 @@
 import 'package:app/entities/entities.dart';
-import 'package:app/features/shared_usecase/request_account_by_id_usecase.dart';
-import 'package:app/features/shared_usecase/request_bank_by_id_usecase.dart';
-import 'package:app/features/shared_usecase/request_user_by_id_usecase.dart';
+import 'package:app/features/shared/request_account_by_id_usecase.dart';
+import 'package:app/features/shared/request_bank_by_id_usecase.dart';
+import 'package:app/features/shared/request_user_by_id_usecase.dart';
 import 'package:app/features/transfer/transfer_confirm/domain/usecases/validate_transaction_usecase.dart';
 import 'package:app/features/transfer/transfer_confirm/presentation/bloc/transfer_confirm_bloc.dart';
 import 'package:app/features/transfer/transfer_confirm/presentation/transfer_confirm_container.dart';

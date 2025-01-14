@@ -8,10 +8,10 @@ import 'package:path_provider/path_provider.dart';
 
 class GenerateBarcodeUsecase {
   GenerateBarcodeUsecase();
-  Future<String> call(String string, String) async {
-    final dm = Barcode.code128(useCode128C: true);
+  Future<String> call(String string, String name) async {
+    final dm = Barcode.code128(useCode128C: true, escapes: true);
     final svg = dm.toSvg(string);
-    final fileName = 'barcode_$string.svg';
+    final fileName = 'barcode_$name.svg';
     final assetDir = await getApplicationCacheDirectory();
     final directory = Directory(assetDir.path + '/barcode');
     if (!await directory.exists()) {

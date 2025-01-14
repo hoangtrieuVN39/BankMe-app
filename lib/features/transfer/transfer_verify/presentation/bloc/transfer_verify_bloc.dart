@@ -1,5 +1,5 @@
 import 'package:app/entities/entities.dart';
-import 'package:app/features/shared_usecase/request_card_by_account_id_usecase.dart';
+import 'package:app/features/shared/request_card_by_account_id_usecase.dart';
 import 'package:app/features/transfer/transfer_verify/domain/usecases/validate_transaction_usecase.dart';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -30,7 +30,7 @@ class TransferVerifyBloc
 
     on<onVerify>((event, emit) async {
       final isValid = await verifyTransactionUsecase.call(
-        state.cvv!,
+        state.cvv ?? '',
         state.card!,
         state.transaction!.accountId,
       );

@@ -1,10 +1,10 @@
 import 'package:app/entities/entities.dart';
-import 'package:app/features/shared_usecase/request_account_by_id_usecase.dart';
-import 'package:app/features/shared_usecase/request_bank_by_id_usecase.dart';
-import 'package:app/features/shared_usecase/request_transactions_by_account.dart';
-import 'package:app/features/shared_usecase/request_user_by_id_usecase.dart';
+import 'package:app/features/shared/request_account_by_id_usecase.dart';
+import 'package:app/features/shared/request_bank_by_id_usecase.dart';
+import 'package:app/features/shared/request_transactions_by_account.dart';
+import 'package:app/features/shared/request_user_by_id_usecase.dart';
 import 'package:app/features/transfer_history/transfer_history_detail/presentations/bloc/transfer_history_detail_bloc.dart';
-import 'package:app/features/transfer_history/transfer_history_detail/domain/usecases/generate_barcode_usecase.dart';
+import 'package:app/features/shared/utilities/generate_barcode_usecase.dart';
 import 'package:app/features/transfer_history/transfer_history_detail/presentations/transfer_history_detail_container.dart';
 import 'package:app/services/http/account_repository_impl.dart';
 import 'package:app/services/http/bank_repository_impl.dart';

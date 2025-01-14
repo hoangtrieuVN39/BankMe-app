@@ -1,5 +1,5 @@
 import 'package:app/entities/entities.dart';
-import 'package:app/features/shared_usecase/request_card_by_account_id_usecase.dart';
+import 'package:app/features/shared/request_card_by_account_id_usecase.dart';
 import 'package:app/features/transfer/transfer_verify/domain/usecases/validate_transaction_usecase.dart';
 import 'package:app/features/transfer/transfer_verify/presentation/bloc/transfer_verify_bloc.dart';
 import 'package:app/features/transfer/transfer_verify/presentation/transfer_verify_container.dart';

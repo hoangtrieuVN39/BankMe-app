@@ -16,44 +16,43 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$TransferQrEvent {
-  String get barcode => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() started,
     required TResult Function(String barcode) barcodeDetected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
     TResult? Function(String barcode)? barcodeDetected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
     TResult Function(String barcode)? barcodeDetected,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(Started value) started,
     required TResult Function(BarcodeDetected value) barcodeDetected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Started value)? started,
     TResult? Function(BarcodeDetected value)? barcodeDetected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(Started value)? started,
     TResult Function(BarcodeDetected value)? barcodeDetected,
     required TResult orElse(),
   }) =>
-      throw _privateConstructorUsedError;
-
-  /// Create a copy of TransferQrEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $TransferQrEventCopyWith<TransferQrEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -62,8 +61,6 @@ abstract class $TransferQrEventCopyWith<$Res> {
   factory $TransferQrEventCopyWith(
           TransferQrEvent value, $Res Function(TransferQrEvent) then) =
       _$TransferQrEventCopyWithImpl<$Res, TransferQrEvent>;
-  @useResult
-  $Res call({String barcode});
 }
 
 /// @nodoc
@@ -78,27 +75,118 @@ class _$TransferQrEventCopyWithImpl<$Res, $Val extends TransferQrEvent>
 
   /// Create a copy of TransferQrEvent
   /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? barcode = null,
-  }) {
-    return _then(_value.copyWith(
-      barcode: null == barcode
-          ? _value.barcode
-          : barcode // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
 }
 
 /// @nodoc
-abstract class _$$BarcodeDetectedImplCopyWith<$Res>
-    implements $TransferQrEventCopyWith<$Res> {
+abstract class _$$StartedImplCopyWith<$Res> {
+  factory _$$StartedImplCopyWith(
+          _$StartedImpl value, $Res Function(_$StartedImpl) then) =
+      __$$StartedImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$StartedImplCopyWithImpl<$Res>
+    extends _$TransferQrEventCopyWithImpl<$Res, _$StartedImpl>
+    implements _$$StartedImplCopyWith<$Res> {
+  __$$StartedImplCopyWithImpl(
+      _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of TransferQrEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$StartedImpl implements Started {
+  const _$StartedImpl();
+
+  @override
+  String toString() {
+    return 'TransferQrEvent.started()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$StartedImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function(String barcode) barcodeDetected,
+  }) {
+    return started();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function(String barcode)? barcodeDetected,
+  }) {
+    return started?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(String barcode)? barcodeDetected,
+    required TResult orElse(),
+  }) {
+    if (started != null) {
+      return started();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(Started value) started,
+    required TResult Function(BarcodeDetected value) barcodeDetected,
+  }) {
+    return started(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Started value)? started,
+    TResult? Function(BarcodeDetected value)? barcodeDetected,
+  }) {
+    return started?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Started value)? started,
+    TResult Function(BarcodeDetected value)? barcodeDetected,
+    required TResult orElse(),
+  }) {
+    if (started != null) {
+      return started(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Started implements TransferQrEvent {
+  const factory Started() = _$StartedImpl;
+}
+
+/// @nodoc
+abstract class _$$BarcodeDetectedImplCopyWith<$Res> {
   factory _$$BarcodeDetectedImplCopyWith(_$BarcodeDetectedImpl value,
           $Res Function(_$BarcodeDetectedImpl) then) =
       __$$BarcodeDetectedImplCopyWithImpl<$Res>;
-  @override
   @useResult
   $Res call({String barcode});
 }
@@ -163,6 +251,7 @@ class _$BarcodeDetectedImpl implements BarcodeDetected {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
+    required TResult Function() started,
     required TResult Function(String barcode) barcodeDetected,
   }) {
     return barcodeDetected(barcode);
@@ -171,6 +260,7 @@ class _$BarcodeDetectedImpl implements BarcodeDetected {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
     TResult? Function(String barcode)? barcodeDetected,
   }) {
     return barcodeDetected?.call(barcode);
@@ -179,6 +269,7 @@ class _$BarcodeDetectedImpl implements BarcodeDetected {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
     TResult Function(String barcode)? barcodeDetected,
     required TResult orElse(),
   }) {
@@ -191,6 +282,7 @@ class _$BarcodeDetectedImpl implements BarcodeDetected {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
+    required TResult Function(Started value) started,
     required TResult Function(BarcodeDetected value) barcodeDetected,
   }) {
     return barcodeDetected(this);
@@ -199,6 +291,7 @@ class _$BarcodeDetectedImpl implements BarcodeDetected {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Started value)? started,
     TResult? Function(BarcodeDetected value)? barcodeDetected,
   }) {
     return barcodeDetected?.call(this);
@@ -207,6 +300,7 @@ class _$BarcodeDetectedImpl implements BarcodeDetected {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
+    TResult Function(Started value)? started,
     TResult Function(BarcodeDetected value)? barcodeDetected,
     required TResult orElse(),
   }) {
@@ -220,12 +314,10 @@ class _$BarcodeDetectedImpl implements BarcodeDetected {
 abstract class BarcodeDetected implements TransferQrEvent {
   const factory BarcodeDetected(final String barcode) = _$BarcodeDetectedImpl;
 
-  @override
   String get barcode;
 
   /// Create a copy of TransferQrEvent
   /// with the given fields replaced by the non-null parameter values.
-  @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarcodeDetectedImplCopyWith<_$BarcodeDetectedImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -233,6 +325,7 @@ abstract class BarcodeDetected implements TransferQrEvent {
 
 /// @nodoc
 mixin _$TransferQrState {
+  MobileScannerController? get controller => throw _privateConstructorUsedError;
   String? get accountNumberDetected => throw _privateConstructorUsedError;
   int? get bankIdDetected => throw _privateConstructorUsedError;
 
@@ -249,7 +342,10 @@ abstract class $TransferQrStateCopyWith<$Res> {
           TransferQrState value, $Res Function(TransferQrState) then) =
       _$TransferQrStateCopyWithImpl<$Res, TransferQrState>;
   @useResult
-  $Res call({String? accountNumberDetected, int? bankIdDetected});
+  $Res call(
+      {MobileScannerController? controller,
+      String? accountNumberDetected,
+      int? bankIdDetected});
 }
 
 /// @nodoc
@@ -267,10 +363,15 @@ class _$TransferQrStateCopyWithImpl<$Res, $Val extends TransferQrState>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? controller = freezed,
     Object? accountNumberDetected = freezed,
     Object? bankIdDetected = freezed,
   }) {
     return _then(_value.copyWith(
+      controller: freezed == controller
+          ? _value.controller
+          : controller // ignore: cast_nullable_to_non_nullable
+              as MobileScannerController?,
       accountNumberDetected: freezed == accountNumberDetected
           ? _value.accountNumberDetected
           : accountNumberDetected // ignore: cast_nullable_to_non_nullable
@@ -291,7 +392,10 @@ abstract class _$$TransferQrStateImplCopyWith<$Res>
       __$$TransferQrStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? accountNumberDetected, int? bankIdDetected});
+  $Res call(
+      {MobileScannerController? controller,
+      String? accountNumberDetected,
+      int? bankIdDetected});
 }
 
 /// @nodoc
@@ -307,10 +411,15 @@ class __$$TransferQrStateImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? controller = freezed,
     Object? accountNumberDetected = freezed,
     Object? bankIdDetected = freezed,
   }) {
     return _then(_$TransferQrStateImpl(
+      controller: freezed == controller
+          ? _value.controller
+          : controller // ignore: cast_nullable_to_non_nullable
+              as MobileScannerController?,
       accountNumberDetected: freezed == accountNumberDetected
           ? _value.accountNumberDetected
           : accountNumberDetected // ignore: cast_nullable_to_non_nullable
@@ -327,8 +436,13 @@ class __$$TransferQrStateImplCopyWithImpl<$Res>
 
 class _$TransferQrStateImpl implements _TransferQrState {
   const _$TransferQrStateImpl(
-      {this.accountNumberDetected = null, this.bankIdDetected = null});
+      {this.controller = null,
+      this.accountNumberDetected = null,
+      this.bankIdDetected = null});
 
+  @override
+  @JsonKey()
+  final MobileScannerController? controller;
   @override
   @JsonKey()
   final String? accountNumberDetected;
@@ -338,7 +452,7 @@ class _$TransferQrStateImpl implements _TransferQrState {
 
   @override
   String toString() {
-    return 'TransferQrState(accountNumberDetected: $accountNumberDetected, bankIdDetected: $bankIdDetected)';
+    return 'TransferQrState(controller: $controller, accountNumberDetected: $accountNumberDetected, bankIdDetected: $bankIdDetected)';
   }
 
   @override
@@ -346,6 +460,8 @@ class _$TransferQrStateImpl implements _TransferQrState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$TransferQrStateImpl &&
+            (identical(other.controller, controller) ||
+                other.controller == controller) &&
             (identical(other.accountNumberDetected, accountNumberDetected) ||
                 other.accountNumberDetected == accountNumberDetected) &&
             (identical(other.bankIdDetected, bankIdDetected) ||
@@ -353,8 +469,8 @@ class _$TransferQrStateImpl implements _TransferQrState {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, accountNumberDetected, bankIdDetected);
+  int get hashCode => Object.hash(
+      runtimeType, controller, accountNumberDetected, bankIdDetected);
 
   /// Create a copy of TransferQrState
   /// with the given fields replaced by the non-null parameter values.
@@ -368,9 +484,12 @@ class _$TransferQrStateImpl implements _TransferQrState {
 
 abstract class _TransferQrState implements TransferQrState {
   const factory _TransferQrState(
-      {final String? accountNumberDetected,
+      {final MobileScannerController? controller,
+      final String? accountNumberDetected,
       final int? bankIdDetected}) = _$TransferQrStateImpl;
 
+  @override
+  MobileScannerController? get controller;
   @override
   String? get accountNumberDetected;
   @override
