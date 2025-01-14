@@ -1,5 +1,5 @@
-import 'package:app/features/transfer/transfer_qr/presentations/bloc/transfer_qr_bloc.dart';
-import 'package:app/features/transfer/transfer_qr/presentations/transfer_qr_container.dart';
+import 'package:BankMe/features/transfer/transfer_qr/presentations/bloc/transfer_qr_bloc.dart';
+import 'package:BankMe/features/transfer/transfer_qr/presentations/transfer_qr_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

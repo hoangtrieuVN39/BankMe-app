@@ -1,10 +1,10 @@
-import 'package:app/features/shared/request_account_by_id_usecase.dart';
+import 'package:BankMe/shared/request_account_by_id_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:app/entities/entities.dart';
-import 'package:app/features/shared/request_banks_usecase.dart';
-import 'package:app/features/transfer/transfer_main/domain/usecases/transfer_usecase.dart';
-import 'package:app/features/shared/request_account_by_acc_num_usecase.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/shared/request_banks_usecase.dart';
+import 'package:BankMe/features/transfer/transfer_main/domain/usecases/transfer_usecase.dart';
+import 'package:BankMe/shared/request_account_by_acc_num_usecase.dart';
 
 part 'transfer_main_event.dart';
 part 'transfer_main_bloc.freezed.dart';

@@ -1,10 +1,10 @@
-import 'package:app/entities/entities.dart';
-import 'package:app/features/login/domain/usecases/login_account_usecase.dart';
-import 'package:app/services/http/repositories/user_repository.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/features/login/domain/usecases/login_account_usecase.dart';
+import 'package:BankMe/services/http/repositories/user_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:app/services/http/repositories/account_repository.dart';
+import 'package:BankMe/services/http/repositories/account_repository.dart';
 
 // Create a Mock class for your GetUserByAccNumber service
 @GenerateNiceMocks([MockSpec<UserRepository>()])

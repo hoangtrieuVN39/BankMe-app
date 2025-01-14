@@ -1,5 +1,5 @@
-import 'package:app/entities/entities.dart';
-import 'package:app/services/http/repositories/account_repository.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/services/http/repositories/account_repository.dart';
 
 class RequestAccountByUserUsecase {
   final AccountRepository accountRepository;

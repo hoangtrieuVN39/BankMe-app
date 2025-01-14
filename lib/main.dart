@@ -1,13 +1,13 @@
-import 'package:app/features/home/presentations/home_page.dart';
-import 'package:app/features/login/presentations/login_page.dart';
-import 'package:app/features/transfer_history/transfer_history/presentations/transfer_history_page.dart';
-import 'package:app/features/transfer_history/transfer_history_detail/presentations/transfer_history_detail_page.dart';
-import 'package:app/features/transfer/transfer_main/presentations/transfer_main_page.dart';
-import 'package:app/features/transfer/transfer_verify/presentation/transfer_verify_page.dart';
-import 'package:app/features/transfer/transfer_confirm/presentation/transfer_confirm_page.dart';
+import 'package:BankMe/features/home/presentations/home_page.dart';
+import 'package:BankMe/features/login/presentations/login_page.dart';
+import 'package:BankMe/features/transfer_history/transfer_history/presentations/transfer_history_page.dart';
+import 'package:BankMe/features/transfer_history/transfer_history_detail/presentations/transfer_history_detail_page.dart';
+import 'package:BankMe/features/transfer/transfer_main/presentations/transfer_main_page.dart';
+import 'package:BankMe/features/transfer/transfer_verify/presentation/transfer_verify_page.dart';
+import 'package:BankMe/features/transfer/transfer_confirm/presentation/transfer_confirm_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:app/core/Provider.dart';
+import 'package:BankMe/core/Provider.dart';
 
 void main() {
   runApp(MultiProvider(

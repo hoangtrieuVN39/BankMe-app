@@ -1,5 +1,5 @@
-import 'package:app/features/transfer/transfer_confirm/presentation/bloc/transfer_confirm_bloc.dart';
-import 'package:app/features/transfer/transfer_verify/presentation/transfer_verify_page.dart';
+import 'package:BankMe/features/transfer/transfer_confirm/presentation/bloc/transfer_confirm_bloc.dart';
+import 'package:BankMe/features/transfer/transfer_verify/presentation/transfer_verify_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';

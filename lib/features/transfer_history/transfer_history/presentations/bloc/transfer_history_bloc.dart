@@ -1,7 +1,7 @@
-import 'package:app/features/shared/request_transactions_by_account_usecase.dart';
+import 'package:BankMe/shared/request_transactions_by_account_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 
 part 'transfer_history_event.dart';
 part 'transfer_history_bloc.freezed.dart';

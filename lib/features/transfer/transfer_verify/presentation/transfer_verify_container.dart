@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:app/features/home/presentations/home_page.dart';
-import 'package:app/features/transfer/transfer_verify/presentation/bloc/transfer_verify_bloc.dart';
+import 'package:BankMe/features/home/presentations/home_page.dart';
+import 'package:BankMe/features/transfer/transfer_verify/presentation/bloc/transfer_verify_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

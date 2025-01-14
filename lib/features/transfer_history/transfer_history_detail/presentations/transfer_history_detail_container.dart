@@ -2,12 +2,12 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:app/features/transfer_history/transfer_history/presentations/transfer_history_page.dart';
-import 'package:app/features/transfer_history/transfer_history_detail/presentations/bloc/transfer_history_detail_bloc.dart';
-import 'package:app/features/home/presentations/home_page.dart';
+import 'package:BankMe/features/transfer_history/transfer_history/presentations/transfer_history_page.dart';
+import 'package:BankMe/features/transfer_history/transfer_history_detail/presentations/bloc/transfer_history_detail_bloc.dart';
+import 'package:BankMe/features/home/presentations/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:intl/intl.dart';

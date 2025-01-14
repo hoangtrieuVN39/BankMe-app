@@ -1,4 +1,4 @@
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 import 'package:flutter/foundation.dart';
 
 class UserProvider extends ChangeNotifier {

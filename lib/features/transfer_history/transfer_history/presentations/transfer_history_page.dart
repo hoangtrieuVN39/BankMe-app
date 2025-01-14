@@ -1,8 +1,8 @@
-import 'package:app/core/Provider.dart';
-import 'package:app/features/shared/request_transactions_by_account_usecase.dart';
-import 'package:app/features/transfer_history/transfer_history/presentations/bloc/transfer_history_bloc.dart';
-import 'package:app/features/transfer_history/transfer_history/presentations/transfer_history_container.dart';
-import 'package:app/services/http/transaction_repository_impl.dart';
+import 'package:BankMe/core/Provider.dart';
+import 'package:BankMe/shared/request_transactions_by_account_usecase.dart';
+import 'package:BankMe/features/transfer_history/transfer_history/presentations/bloc/transfer_history_bloc.dart';
+import 'package:BankMe/features/transfer_history/transfer_history/presentations/transfer_history_container.dart';
+import 'package:BankMe/services/http/transaction_repository_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

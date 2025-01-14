@@ -1,11 +1,11 @@
-import 'package:app/core/Provider.dart';
-import 'package:app/features/transfer/transfer_confirm/presentation/transfer_confirm_container.dart';
-import 'package:app/features/transfer/transfer_confirm/presentation/transfer_confirm_page.dart';
-import 'package:app/features/transfer/transfer_main/presentations/bloc/transfer_main_bloc.dart';
-import 'package:app/features/home/presentations/home_page.dart';
+import 'package:BankMe/core/Provider.dart';
+import 'package:BankMe/features/transfer/transfer_confirm/presentation/transfer_confirm_container.dart';
+import 'package:BankMe/features/transfer/transfer_confirm/presentation/transfer_confirm_page.dart';
+import 'package:BankMe/features/transfer/transfer_main/presentations/bloc/transfer_main_bloc.dart';
+import 'package:BankMe/features/home/presentations/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 
 class TransferMainContainer extends StatelessWidget {
   TransferMainContainer({super.key});

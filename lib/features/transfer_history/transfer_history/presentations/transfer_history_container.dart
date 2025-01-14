@@ -1,8 +1,8 @@
-import 'package:app/features/transfer_history/transfer_history/presentations/bloc/transfer_history_bloc.dart';
-import 'package:app/features/transfer_history/transfer_history_detail/presentations/transfer_history_detail_page.dart';
+import 'package:BankMe/features/transfer_history/transfer_history/presentations/bloc/transfer_history_bloc.dart';
+import 'package:BankMe/features/transfer_history/transfer_history_detail/presentations/transfer_history_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 
 import 'package:intl/intl.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:app/features/shared/request_bank_by_id_usecase.dart';
-import 'package:app/entities/entities.dart';
-import 'package:app/services/http/repositories/bank_repository.dart';
+import 'package:BankMe/shared/request_bank_by_id_usecase.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/services/http/repositories/bank_repository.dart';
 import 'package:mockito/annotations.dart';
 
 @GenerateNiceMocks([MockSpec<BankRepository>()])

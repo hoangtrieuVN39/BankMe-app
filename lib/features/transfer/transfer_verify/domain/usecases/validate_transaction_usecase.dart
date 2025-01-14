@@ -1,7 +1,7 @@
-import 'package:app/entities/card/card.dart';
-import 'package:app/entities/entities.dart';
-import 'package:app/services/http/repositories/transaction_repository.dart';
-import 'package:app/services/http/repositories/card_repository.dart';
+import 'package:BankMe/entities/card/card.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/services/http/repositories/transaction_repository.dart';
+import 'package:BankMe/services/http/repositories/card_repository.dart';
 
 class VerifyTransactionUsecase {
   final TransactionRepository transactionRepository;

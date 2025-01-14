@@ -1,9 +1,9 @@
-import 'package:app/features/shared/request_banks_usecase.dart';
-import 'package:app/services/http/repositories/bank_repository.dart';
+import 'package:BankMe/shared/request_banks_usecase.dart';
+import 'package:BankMe/services/http/repositories/bank_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 
 // Create a Mock class for your BankService
 @GenerateNiceMocks([MockSpec<BankRepository>()])

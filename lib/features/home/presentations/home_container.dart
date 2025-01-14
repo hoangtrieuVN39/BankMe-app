@@ -1,11 +1,11 @@
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:app/core/Provider.dart';
-import 'package:app/entities/entities.dart';
-import 'package:app/features/home/presentations/bloc/home_bloc.dart';
-import 'package:app/features/transfer/transfer_qr/presentations/transfer_qr_page.dart';
-import 'package:app/features/transfer_history/transfer_history_detail/presentations/transfer_history_detail_page.dart';
+import 'package:BankMe/core/Provider.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/features/home/presentations/bloc/home_bloc.dart';
+import 'package:BankMe/features/transfer/transfer_qr/presentations/transfer_qr_page.dart';
+import 'package:BankMe/features/transfer_history/transfer_history_detail/presentations/transfer_history_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';

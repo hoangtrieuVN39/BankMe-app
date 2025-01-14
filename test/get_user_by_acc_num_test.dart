@@ -1,6 +1,6 @@
-import 'package:app/entities/entities.dart';
-import 'package:app/features/shared/request_user_by_id_usecase.dart';
-import 'package:app/services/http/repositories/user_repository.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/shared/request_user_by_id_usecase.dart';
+import 'package:BankMe/services/http/repositories/user_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';

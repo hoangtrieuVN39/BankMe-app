@@ -5,8 +5,8 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i3;
 
-import 'package:app/entities/entities.dart' as _i4;
-import 'package:app/services/http/repositories/user_repository.dart' as _i2;
+import 'package:BankMe/entities/entities.dart' as _i4;
+import 'package:BankMe/services/http/repositories/user_repository.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -28,22 +28,19 @@ import 'package:mockito/mockito.dart' as _i1;
 /// See the documentation for Mockito's code generation for more information.
 class MockUserRepository extends _i1.Mock implements _i2.UserRepository {
   @override
-  _i3.Future<_i4.User?> requestUserByID(int? userId) =>
-      (super.noSuchMethod(
-            Invocation.method(#requestUserByID, [userId]),
-            returnValue: _i3.Future<_i4.User?>.value(),
-            returnValueForMissingStub: _i3.Future<_i4.User?>.value(),
-          )
-          as _i3.Future<_i4.User?>);
+  _i3.Future<_i4.User?> requestUserByID(int? userId) => (super.noSuchMethod(
+        Invocation.method(#requestUserByID, [userId]),
+        returnValue: _i3.Future<_i4.User?>.value(),
+        returnValueForMissingStub: _i3.Future<_i4.User?>.value(),
+      ) as _i3.Future<_i4.User?>);
 
   @override
   _i3.Future<_i4.User?> requestUserByAccount(_i4.Account? account) =>
       (super.noSuchMethod(
-            Invocation.method(#requestUserByAccount, [account]),
-            returnValue: _i3.Future<_i4.User?>.value(),
-            returnValueForMissingStub: _i3.Future<_i4.User?>.value(),
-          )
-          as _i3.Future<_i4.User?>);
+        Invocation.method(#requestUserByAccount, [account]),
+        returnValue: _i3.Future<_i4.User?>.value(),
+        returnValueForMissingStub: _i3.Future<_i4.User?>.value(),
+      ) as _i3.Future<_i4.User?>);
 
   @override
   _i3.Future<_i4.User?> requestUserByAccountNumber(
@@ -51,12 +48,11 @@ class MockUserRepository extends _i1.Mock implements _i2.UserRepository {
     int? bankId,
   ) =>
       (super.noSuchMethod(
-            Invocation.method(#requestUserByAccountNumber, [
-              accountNumber,
-              bankId,
-            ]),
-            returnValue: _i3.Future<_i4.User?>.value(),
-            returnValueForMissingStub: _i3.Future<_i4.User?>.value(),
-          )
-          as _i3.Future<_i4.User?>);
+        Invocation.method(#requestUserByAccountNumber, [
+          accountNumber,
+          bankId,
+        ]),
+        returnValue: _i3.Future<_i4.User?>.value(),
+        returnValueForMissingStub: _i3.Future<_i4.User?>.value(),
+      ) as _i3.Future<_i4.User?>);
 }

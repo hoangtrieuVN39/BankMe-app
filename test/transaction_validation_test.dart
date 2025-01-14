@@ -1,9 +1,9 @@
-import 'package:app/entities/entities.dart';
-import 'package:app/features/transfer/transfer_confirm/domain/usecases/validate_transaction_usecase.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/features/transfer/transfer_confirm/domain/usecases/validate_transaction_usecase.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:app/services/http/repositories/transaction_repository.dart';
+import 'package:BankMe/services/http/repositories/transaction_repository.dart';
 
 // Create a Mock class for your ValidateTransactionUsecase
 @GenerateNiceMocks([MockSpec<TransactionRepository>()])

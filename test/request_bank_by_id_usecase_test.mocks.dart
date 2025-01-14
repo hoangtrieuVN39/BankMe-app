@@ -5,8 +5,8 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i4;
 
-import 'package:app/entities/entities.dart' as _i2;
-import 'package:app/services/http/repositories/bank_repository.dart' as _i3;
+import 'package:BankMe/entities/entities.dart' as _i2;
+import 'package:BankMe/services/http/repositories/bank_repository.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -25,7 +25,7 @@ import 'package:mockito/mockito.dart' as _i1;
 
 class _FakeBank_0 extends _i1.SmartFake implements _i2.Bank {
   _FakeBank_0(Object parent, Invocation parentInvocation)
-    : super(parent, parentInvocation);
+      : super(parent, parentInvocation);
 }
 
 /// A class which mocks [BankRepository].
@@ -33,45 +33,40 @@ class _FakeBank_0 extends _i1.SmartFake implements _i2.Bank {
 /// See the documentation for Mockito's code generation for more information.
 class MockBankRepository extends _i1.Mock implements _i3.BankRepository {
   @override
-  _i4.Future<List<_i2.Bank>> requestBanks() =>
-      (super.noSuchMethod(
-            Invocation.method(#requestBanks, []),
-            returnValue: _i4.Future<List<_i2.Bank>>.value(<_i2.Bank>[]),
-            returnValueForMissingStub: _i4.Future<List<_i2.Bank>>.value(
-              <_i2.Bank>[],
-            ),
-          )
-          as _i4.Future<List<_i2.Bank>>);
+  _i4.Future<List<_i2.Bank>> requestBanks() => (super.noSuchMethod(
+        Invocation.method(#requestBanks, []),
+        returnValue: _i4.Future<List<_i2.Bank>>.value(<_i2.Bank>[]),
+        returnValueForMissingStub: _i4.Future<List<_i2.Bank>>.value(
+          <_i2.Bank>[],
+        ),
+      ) as _i4.Future<List<_i2.Bank>>);
 
   @override
   _i4.Future<_i2.Bank> requestBankByName(String? bankName) =>
       (super.noSuchMethod(
+        Invocation.method(#requestBankByName, [bankName]),
+        returnValue: _i4.Future<_i2.Bank>.value(
+          _FakeBank_0(
+            this,
             Invocation.method(#requestBankByName, [bankName]),
-            returnValue: _i4.Future<_i2.Bank>.value(
-              _FakeBank_0(
-                this,
-                Invocation.method(#requestBankByName, [bankName]),
-              ),
-            ),
-            returnValueForMissingStub: _i4.Future<_i2.Bank>.value(
-              _FakeBank_0(
-                this,
-                Invocation.method(#requestBankByName, [bankName]),
-              ),
-            ),
-          )
-          as _i4.Future<_i2.Bank>);
+          ),
+        ),
+        returnValueForMissingStub: _i4.Future<_i2.Bank>.value(
+          _FakeBank_0(
+            this,
+            Invocation.method(#requestBankByName, [bankName]),
+          ),
+        ),
+      ) as _i4.Future<_i2.Bank>);
 
   @override
-  _i4.Future<_i2.Bank> requestBankById(int? bankId) =>
-      (super.noSuchMethod(
-            Invocation.method(#requestBankById, [bankId]),
-            returnValue: _i4.Future<_i2.Bank>.value(
-              _FakeBank_0(this, Invocation.method(#requestBankById, [bankId])),
-            ),
-            returnValueForMissingStub: _i4.Future<_i2.Bank>.value(
-              _FakeBank_0(this, Invocation.method(#requestBankById, [bankId])),
-            ),
-          )
-          as _i4.Future<_i2.Bank>);
+  _i4.Future<_i2.Bank> requestBankById(int? bankId) => (super.noSuchMethod(
+        Invocation.method(#requestBankById, [bankId]),
+        returnValue: _i4.Future<_i2.Bank>.value(
+          _FakeBank_0(this, Invocation.method(#requestBankById, [bankId])),
+        ),
+        returnValueForMissingStub: _i4.Future<_i2.Bank>.value(
+          _FakeBank_0(this, Invocation.method(#requestBankById, [bankId])),
+        ),
+      ) as _i4.Future<_i2.Bank>);
 }

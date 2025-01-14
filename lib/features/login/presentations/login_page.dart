@@ -1,13 +1,13 @@
-import 'package:app/features/login/domain/usecases/login_account_usecase.dart';
-import 'package:app/features/shared/request_account_by_user_usecase.dart';
-import 'package:app/features/shared/request_bank_by_id_usecase.dart';
-import 'package:app/features/login/presentations/bloc/login_bloc.dart';
-import 'package:app/features/login/presentations/login_container.dart';
-import 'package:app/services/http/bank_repository_impl.dart';
+import 'package:BankMe/features/login/domain/usecases/login_account_usecase.dart';
+import 'package:BankMe/shared/request_account_by_user_usecase.dart';
+import 'package:BankMe/shared/request_bank_by_id_usecase.dart';
+import 'package:BankMe/features/login/presentations/bloc/login_bloc.dart';
+import 'package:BankMe/features/login/presentations/login_container.dart';
+import 'package:BankMe/services/http/bank_repository_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app/services/http/user_repository_impl.dart';
-import 'package:app/services/http/account_repository_impl.dart';
+import 'package:BankMe/services/http/user_repository_impl.dart';
+import 'package:BankMe/services/http/account_repository_impl.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

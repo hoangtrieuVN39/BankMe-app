@@ -5,9 +5,10 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i4;
 
-import 'package:app/entities/entities.dart' as _i2;
-import 'package:app/services/http/repositories/account_repository.dart' as _i5;
-import 'package:app/services/http/repositories/user_repository.dart' as _i3;
+import 'package:BankMe/entities/entities.dart' as _i2;
+import 'package:BankMe/services/http/repositories/account_repository.dart'
+    as _i5;
+import 'package:BankMe/services/http/repositories/user_repository.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -26,7 +27,7 @@ import 'package:mockito/mockito.dart' as _i1;
 
 class _FakeAccount_0 extends _i1.SmartFake implements _i2.Account {
   _FakeAccount_0(Object parent, Invocation parentInvocation)
-    : super(parent, parentInvocation);
+      : super(parent, parentInvocation);
 }
 
 /// A class which mocks [UserRepository].
@@ -34,22 +35,19 @@ class _FakeAccount_0 extends _i1.SmartFake implements _i2.Account {
 /// See the documentation for Mockito's code generation for more information.
 class MockUserRepository extends _i1.Mock implements _i3.UserRepository {
   @override
-  _i4.Future<_i2.User?> requestUserByID(int? userId) =>
-      (super.noSuchMethod(
-            Invocation.method(#requestUserByID, [userId]),
-            returnValue: _i4.Future<_i2.User?>.value(),
-            returnValueForMissingStub: _i4.Future<_i2.User?>.value(),
-          )
-          as _i4.Future<_i2.User?>);
+  _i4.Future<_i2.User?> requestUserByID(int? userId) => (super.noSuchMethod(
+        Invocation.method(#requestUserByID, [userId]),
+        returnValue: _i4.Future<_i2.User?>.value(),
+        returnValueForMissingStub: _i4.Future<_i2.User?>.value(),
+      ) as _i4.Future<_i2.User?>);
 
   @override
   _i4.Future<_i2.User?> requestUserByAccount(_i2.Account? account) =>
       (super.noSuchMethod(
-            Invocation.method(#requestUserByAccount, [account]),
-            returnValue: _i4.Future<_i2.User?>.value(),
-            returnValueForMissingStub: _i4.Future<_i2.User?>.value(),
-          )
-          as _i4.Future<_i2.User?>);
+        Invocation.method(#requestUserByAccount, [account]),
+        returnValue: _i4.Future<_i2.User?>.value(),
+        returnValueForMissingStub: _i4.Future<_i2.User?>.value(),
+      ) as _i4.Future<_i2.User?>);
 
   @override
   _i4.Future<_i2.User?> requestUserByAccountNumber(
@@ -57,14 +55,13 @@ class MockUserRepository extends _i1.Mock implements _i3.UserRepository {
     int? bankId,
   ) =>
       (super.noSuchMethod(
-            Invocation.method(#requestUserByAccountNumber, [
-              accountNumber,
-              bankId,
-            ]),
-            returnValue: _i4.Future<_i2.User?>.value(),
-            returnValueForMissingStub: _i4.Future<_i2.User?>.value(),
-          )
-          as _i4.Future<_i2.User?>);
+        Invocation.method(#requestUserByAccountNumber, [
+          accountNumber,
+          bankId,
+        ]),
+        returnValue: _i4.Future<_i2.User?>.value(),
+        returnValueForMissingStub: _i4.Future<_i2.User?>.value(),
+      ) as _i4.Future<_i2.User?>);
 }
 
 /// A class which mocks [AccountRepository].
@@ -77,40 +74,37 @@ class MockAccountRepository extends _i1.Mock implements _i5.AccountRepository {
     int? bankId,
   ) =>
       (super.noSuchMethod(
-            Invocation.method(#requestAccountByAccountNumber, [
-              accountNumber,
-              bankId,
-            ]),
-            returnValue: _i4.Future<_i2.Account?>.value(),
-            returnValueForMissingStub: _i4.Future<_i2.Account?>.value(),
-          )
-          as _i4.Future<_i2.Account?>);
+        Invocation.method(#requestAccountByAccountNumber, [
+          accountNumber,
+          bankId,
+        ]),
+        returnValue: _i4.Future<_i2.Account?>.value(),
+        returnValueForMissingStub: _i4.Future<_i2.Account?>.value(),
+      ) as _i4.Future<_i2.Account?>);
 
   @override
   _i4.Future<_i2.Account> requestAccountByUser(_i2.User? user) =>
       (super.noSuchMethod(
+        Invocation.method(#requestAccountByUser, [user]),
+        returnValue: _i4.Future<_i2.Account>.value(
+          _FakeAccount_0(
+            this,
             Invocation.method(#requestAccountByUser, [user]),
-            returnValue: _i4.Future<_i2.Account>.value(
-              _FakeAccount_0(
-                this,
-                Invocation.method(#requestAccountByUser, [user]),
-              ),
-            ),
-            returnValueForMissingStub: _i4.Future<_i2.Account>.value(
-              _FakeAccount_0(
-                this,
-                Invocation.method(#requestAccountByUser, [user]),
-              ),
-            ),
-          )
-          as _i4.Future<_i2.Account>);
+          ),
+        ),
+        returnValueForMissingStub: _i4.Future<_i2.Account>.value(
+          _FakeAccount_0(
+            this,
+            Invocation.method(#requestAccountByUser, [user]),
+          ),
+        ),
+      ) as _i4.Future<_i2.Account>);
 
   @override
   _i4.Future<_i2.Account?> requestAccountById(int? accountId) =>
       (super.noSuchMethod(
-            Invocation.method(#requestAccountById, [accountId]),
-            returnValue: _i4.Future<_i2.Account?>.value(),
-            returnValueForMissingStub: _i4.Future<_i2.Account?>.value(),
-          )
-          as _i4.Future<_i2.Account?>);
+        Invocation.method(#requestAccountById, [accountId]),
+        returnValue: _i4.Future<_i2.Account?>.value(),
+        returnValueForMissingStub: _i4.Future<_i2.Account?>.value(),
+      ) as _i4.Future<_i2.Account?>);
 }

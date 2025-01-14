@@ -1,6 +1,6 @@
-import 'package:app/entities/entities.dart';
-import 'package:app/services/http/repositories/account_repository.dart';
-import 'package:app/services/http/repositories/bank_repository.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/services/http/repositories/account_repository.dart';
+import 'package:BankMe/services/http/repositories/bank_repository.dart';
 
 class RequestAccountByAccNumUsecase {
   final AccountRepository accountRepository;

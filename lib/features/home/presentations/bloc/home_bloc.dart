@@ -1,11 +1,11 @@
 import 'dart:developer';
 
-import 'package:app/features/shared/request_account_by_user_usecase.dart';
-import 'package:app/features/shared/request_transactions_by_account_usecase.dart';
-import 'package:app/features/shared/utilities/generate_qrcode_usecase.dart';
+import 'package:BankMe/shared/request_account_by_user_usecase.dart';
+import 'package:BankMe/shared/request_transactions_by_account_usecase.dart';
+import 'package:BankMe/shared/utilities/generate_qrcode_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:barcode/barcode.dart';
 

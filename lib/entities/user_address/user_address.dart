@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:app/entities/user/user.dart';
+import 'package:BankMe/entities/user/user.dart';
 
 part 'user_address.freezed.dart';
 part 'user_address.g.dart';

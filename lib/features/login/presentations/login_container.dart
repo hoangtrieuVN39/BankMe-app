@@ -1,8 +1,8 @@
-import 'package:app/features/login/presentations/bloc/login_bloc.dart';
+import 'package:BankMe/features/login/presentations/bloc/login_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:app/features/home/presentations/home_page.dart';
-import 'package:app/core/Provider.dart';
+import 'package:BankMe/features/home/presentations/home_page.dart';
+import 'package:BankMe/core/Provider.dart';
 
 class LoginContainer extends StatelessWidget {
   LoginContainer({super.key});

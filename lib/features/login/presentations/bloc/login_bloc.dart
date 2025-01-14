@@ -1,9 +1,9 @@
-import 'package:app/features/login/domain/usecases/login_account_usecase.dart';
-import 'package:app/features/shared/request_account_by_user_usecase.dart';
-import 'package:app/features/shared/request_bank_by_id_usecase.dart';
+import 'package:BankMe/features/login/domain/usecases/login_account_usecase.dart';
+import 'package:BankMe/shared/request_account_by_user_usecase.dart';
+import 'package:BankMe/shared/request_bank_by_id_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 part 'login_event.dart';

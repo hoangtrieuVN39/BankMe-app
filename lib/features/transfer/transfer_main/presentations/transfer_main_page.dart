@@ -1,11 +1,11 @@
-import 'package:app/features/shared/request_account_by_acc_num_usecase.dart';
-import 'package:app/features/shared/request_banks_usecase.dart';
-import 'package:app/features/transfer/transfer_main/domain/usecases/transfer_usecase.dart';
-import 'package:app/features/transfer/transfer_main/presentations/bloc/transfer_main_bloc.dart';
-import 'package:app/features/transfer/transfer_main/presentations/transfer_main_container.dart';
-import 'package:app/services/http/account_repository_impl.dart';
-import 'package:app/services/http/bank_repository_impl.dart';
-import 'package:app/services/http/transaction_repository_impl.dart';
+import 'package:BankMe/shared/request_account_by_acc_num_usecase.dart';
+import 'package:BankMe/shared/request_banks_usecase.dart';
+import 'package:BankMe/features/transfer/transfer_main/domain/usecases/transfer_usecase.dart';
+import 'package:BankMe/features/transfer/transfer_main/presentations/bloc/transfer_main_bloc.dart';
+import 'package:BankMe/features/transfer/transfer_main/presentations/transfer_main_container.dart';
+import 'package:BankMe/services/http/account_repository_impl.dart';
+import 'package:BankMe/services/http/bank_repository_impl.dart';
+import 'package:BankMe/services/http/transaction_repository_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

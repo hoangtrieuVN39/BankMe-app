@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-import 'package:app/features/transfer/transfer_main/presentations/transfer_main_page.dart';
-import 'package:app/features/transfer/transfer_qr/presentations/bloc/transfer_qr_bloc.dart';
+import 'package:BankMe/features/transfer/transfer_main/presentations/transfer_main_page.dart';
+import 'package:BankMe/features/transfer/transfer_qr/presentations/bloc/transfer_qr_bloc.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

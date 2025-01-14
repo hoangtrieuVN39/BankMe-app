@@ -1,7 +1,7 @@
-import 'package:app/entities/entities.dart';
-import 'package:app/features/transfer/transfer_main/domain/usecases/transfer_usecase.dart';
-import 'package:app/services/http/repositories/transaction_repository.dart';
-import 'package:app/services/http/repositories/account_repository.dart';
+import 'package:BankMe/entities/entities.dart';
+import 'package:BankMe/features/transfer/transfer_main/domain/usecases/transfer_usecase.dart';
+import 'package:BankMe/services/http/repositories/transaction_repository.dart';
+import 'package:BankMe/services/http/repositories/account_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';

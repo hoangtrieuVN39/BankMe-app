@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:app/entities/transaction_type/transaction_type.dart';
+import 'package:BankMe/entities/transaction_type/transaction_type.dart';
 
 part 'transaction.freezed.dart';
 part 'transaction.g.dart';

@@ -1,4 +1,4 @@
-import 'package:app/entities/entities.dart';
+import 'package:BankMe/entities/entities.dart';
 
 abstract class CardRepository {
   Future<Card?> requestCardByAccountId(int accountId);

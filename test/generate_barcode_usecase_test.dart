@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:app/features/shared/utilities/generate_barcode_usecase.dart';
+import 'package:BankMe/shared/utilities/generate_barcode_usecase.dart';
 import 'dart:io';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
