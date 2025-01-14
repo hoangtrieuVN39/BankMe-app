@@ -1,4 +1,4 @@
-import 'package:app/features/shared_usecase/request_transactions_by_account.dart';
+import 'package:app/features/shared/request_transactions_by_account.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:app/entities/entities.dart';

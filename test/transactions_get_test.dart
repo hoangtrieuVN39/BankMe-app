@@ -1,5 +1,5 @@
 import 'package:app/entities/entities.dart';
-import 'package:app/features/shared_usecase/request_transactions_by_account.dart';
+import 'package:app/features/shared/request_transactions_by_account_usecase.dart';
 import 'package:app/services/http/repositories/transaction_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
